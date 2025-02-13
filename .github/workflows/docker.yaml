@@ -15,4 +15,4 @@ jobs:
     steps: 
       - name: build it
         run: |
-          echo IMAGE-NAME: ${{ inputs.image-name }}
+          echo IMAGE-NAME: ${{ inputs.image-name }} ${{github.run_number}} ${{github.sha}}
