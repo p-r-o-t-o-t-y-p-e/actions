@@ -13,5 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps: 
-      - run: |
-        echo IMAGE-NAME: ${{ inputs.image-name }}
+      - name: build it
+        run: |
+          echo IMAGE-NAME: ${{ inputs.image-name }}
