@@ -1,0 +1,16 @@
+name: docker
+
+on:
+  workflow_call:
+    inputs:
+      image-name:
+        description: "image name"
+        required: true
+        type: string
+
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+
+    steps: 
+      - run: echo "IMAGE-NAME: ${{ inputs.image-name }}"
